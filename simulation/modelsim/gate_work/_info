@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Digital_Logic_Design/Normal/Homework 2/simulation/modelsim
+vhw2
+!s110 1649691804
+!i10b 1
+!s100 =5VS;hbZzSoBR_3T[6`3j3
+IeT>PeC4J2PCOA:8n4QS?<0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649691794
+8hw2.vo
+Fhw2.vo
+L0 31
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1649691804.000000
+!s107 hw2.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|hw2.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+tCvgOpt 0

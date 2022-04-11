@@ -1,0 +1,16 @@
+module read(
+	input clk,
+	input reset_n,
+	
+	input write,		//Ok to write next signal
+	input [7:0] data,
+	
+	output write_complete,
+	
+	output sck,
+	output spi_do
+);
+
+	
+	
+endmodule 

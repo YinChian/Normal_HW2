@@ -1,0 +1,29 @@
+|hw2
+clk_50M => ~NO_FANOUT~
+reset_n => ~NO_FANOUT~
+write => ~NO_FANOUT~
+write_complete => ~NO_FANOUT~
+read => ~NO_FANOUT~
+read_complete => ~NO_FANOUT~
+write_value[0] => ~NO_FANOUT~
+write_value[1] => ~NO_FANOUT~
+write_value[2] => ~NO_FANOUT~
+write_value[3] => ~NO_FANOUT~
+write_value[4] => ~NO_FANOUT~
+write_value[5] => ~NO_FANOUT~
+write_value[6] => ~NO_FANOUT~
+write_value[7] => ~NO_FANOUT~
+read_value[0] => ~NO_FANOUT~
+read_value[1] => ~NO_FANOUT~
+read_value[2] => ~NO_FANOUT~
+read_value[3] => ~NO_FANOUT~
+read_value[4] => ~NO_FANOUT~
+read_value[5] => ~NO_FANOUT~
+read_value[6] => ~NO_FANOUT~
+read_value[7] => ~NO_FANOUT~
+spi_csn => ~NO_FANOUT~
+spi_sck => ~NO_FANOUT~
+spi_do => ~NO_FANOUT~
+spi_di => ~NO_FANOUT~
+
+

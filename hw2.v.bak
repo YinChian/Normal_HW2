@@ -1,0 +1,18 @@
+module hw2(
+	input clk_50M,
+	input reset_n,
+	input write,
+	input write_complete,
+	input read,
+	input read_complete,
+	input [7:0] write_value,
+	input [7:0] read_value,
+	input spi_csn,
+	input spi_sck,
+	input spi_do,
+	input spi_di
+);
+
+
+
+endmodule
