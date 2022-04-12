@@ -1,5 +1,5 @@
 Flow report for hw2
-Mon Apr 11 23:49:49 2022
+Tue Apr 12 22:35:50 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,24 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Mon Apr 11 23:49:49 2022       ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; hw2                                         ;
-; Top-level Entity Name       ; hw2                                         ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSXFC6D6F31C7                              ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Tue Apr 12 22:35:50 2022       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; hw2                                         ;
+; Top-level Entity Name              ; hw2                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 195 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 187 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 122 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 122                                         ;
+; Total pins                         ; 26 / 529 ( 5 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/11/2022 23:49:40 ;
+; Start date & time ; 04/12/2022 22:35:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; hw2                 ;
 +-------------------+---------------------+
@@ -73,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 185122851927703.164969218005708        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 185122851927703.164977411619708        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; hw2_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; hw2_tb                                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -96,29 +98,41 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4770 MB             ; 00:00:22                           ;
-; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:22                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4840 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 6696 MB             ; 00:00:28                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4681 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4983 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4652 MB             ; 00:00:01                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:57                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+------------------------+--------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname   ; OS Name    ; OS Version ; Processor type ;
-+------------------------+--------------------+------------+------------+----------------+
-; Analysis & Elaboration ; Sonic-The-Hedgehog ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+--------------------+------------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++----------------------+--------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname   ; OS Name    ; OS Version ; Processor type ;
++----------------------+--------------------+------------+------------+----------------+
+; Analysis & Synthesis ; Sonic-The-Hedgehog ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Sonic-The-Hedgehog ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Sonic-The-Hedgehog ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Sonic-The-Hedgehog ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Sonic-The-Hedgehog ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+--------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off hw2 -c hw2 --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off hw2 -c hw2
+quartus_fit --read_settings_files=off --write_settings_files=off hw2 -c hw2
+quartus_asm --read_settings_files=off --write_settings_files=off hw2 -c hw2
+quartus_sta hw2 -c hw2
+quartus_eda --read_settings_files=off --write_settings_files=off hw2 -c hw2
 
 
 

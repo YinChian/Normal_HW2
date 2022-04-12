@@ -1,0 +1,15 @@
+module read(
+	input clk,
+	input reset_n,
+	
+	input en,
+	input [7:0] data,
+	
+	
+	output write_complete,
+	output reg sck,
+	output reg spi_do,
+	
+	input spi_di,
+	output [7:0] read_data
+);

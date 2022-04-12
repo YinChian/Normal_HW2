@@ -1,12 +1,14 @@
-Analysis & Elaboration Status : Successful - Mon Apr 11 23:49:49 2022
+Analysis & Synthesis Status : Successful - Tue Apr 12 22:35:26 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : hw2
 Top-level Entity Name : hw2
-Family : Cyclone V
-Logic utilization (in ALMs) : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total block memory bits : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
-Total DLLs : N/A until Partition Merge
+Family : Cyclone IV E
+Total logic elements : 195
+    Total combinational functions : 187
+    Dedicated logic registers : 122
+Total registers : 122
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

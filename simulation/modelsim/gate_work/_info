@@ -8,25 +8,92 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Digital_Logic_Design/Normal/Homework 2/simulation/modelsim
-vhw2
-!s110 1649691804
+vhard_block
+Z1 !s110 1649774157
 !i10b 1
-!s100 =5VS;hbZzSoBR_3T[6`3j3
-IeT>PeC4J2PCOA:8n4QS?<0
-VDg1SIo80bB@j0V0VzS_@n1
+!s100 kb=R<EIm1Q0jo?`N8h5Bo0
+IWJO44^nG_XBkaiEFE>;l42
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1649691794
-8hw2.vo
-Fhw2.vo
-L0 31
-OV;L;10.5b;63
+Z3 w1649774150
+Z4 8hw2.vo
+Z5 Fhw2.vo
+L0 6467
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1649691804.000000
-!s107 hw2.vo|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|hw2.vo|
+Z7 !s108 1649774157.000000
+Z8 !s107 hw2.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|hw2.vo|
 !i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+.
-tCvgOpt 0
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vhw2
+R1
+!i10b 1
+!s100 RBhPh37EH[i7bhO;Y_50:2
+IIO[Y?D9O9UAP7FJi=@hFm0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vhw2_tb
+R1
+!i10b 1
+!s100 FG5SaMPIXQH>n]lU;CE<e3
+I3_:1mZ7]26RVM`cSEkLUe1
+R2
+R0
+w1649773522
+8D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v
+FD:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Normal/Homework 2|D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v|
+!i113 1
+R10
+Z13 !s92 -vlog01compat -work work {+incdir+D:/Digital_Logic_Design/Normal/Homework 2}
+R12
+vM25AA010A
+R1
+!i10b 1
+!s100 fD>g_OWamZh6KTADO?Xch0
+IbV>fOg`m7VNdEm2`XGg@M3
+R2
+R0
+w1649691195
+8D:/Digital_Logic_Design/Normal/Homework 2/M25AA010A.v
+FD:/Digital_Logic_Design/Normal/Homework 2/M25AA010A.v
+L0 81
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Digital_Logic_Design/Normal/Homework 2/M25AA010A.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Normal/Homework 2|D:/Digital_Logic_Design/Normal/Homework 2/M25AA010A.v|
+!i113 1
+R10
+R13
+R12
+n@m25@a@a010@a
