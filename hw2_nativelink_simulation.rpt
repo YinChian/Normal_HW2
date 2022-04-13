@@ -33,40 +33,40 @@ ModelSim-Altera Info: # Modifying modelsim.ini
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {hw2.vo}
 ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-ModelSim-Altera Info: # Start time: 22:35:57 on Apr 12,2022
+ModelSim-Altera Info: # Start time: 12:41:59 on Apr 13,2022
 ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." hw2.vo 
 ModelSim-Altera Info: # -- Compiling module hw2
 ModelSim-Altera Info: # -- Compiling module hard_block
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	hw2
-ModelSim-Altera Info: # End time: 22:35:57 on Apr 12,2022, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 12:41:59 on Apr 13,2022, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Normal/Homework\ 2 {D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v}
 ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-ModelSim-Altera Info: # Start time: 22:35:57 on Apr 12,2022
+ModelSim-Altera Info: # Start time: 12:41:59 on Apr 13,2022
 ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Normal/Homework 2" D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v 
 ModelSim-Altera Info: # -- Compiling module hw2_tb
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	hw2_tb
-ModelSim-Altera Info: # End time: 22:35:57 on Apr 12,2022, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 12:41:59 on Apr 13,2022, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Normal/Homework\ 2 {D:/Digital_Logic_Design/Normal/Homework 2/M25AA010A.v}
 ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-ModelSim-Altera Info: # Start time: 22:35:57 on Apr 12,2022
+ModelSim-Altera Info: # Start time: 12:41:59 on Apr 13,2022
 ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Normal/Homework 2" D:/Digital_Logic_Design/Normal/Homework 2/M25AA010A.v 
 ModelSim-Altera Info: # -- Compiling module M25AA010A
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # Top level modules:
 ModelSim-Altera Info: # 	M25AA010A
-ModelSim-Altera Info: # End time: 22:35:57 on Apr 12,2022, Elapsed time: 0:00:00
+ModelSim-Altera Info: # End time: 12:41:59 on Apr 13,2022, Elapsed time: 0:00:00
 ModelSim-Altera Info: # Errors: 0, Warnings: 0
 ModelSim-Altera Info: # 
 ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  hw2_tb
 ModelSim-Altera Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" hw2_tb 
-ModelSim-Altera Info: # Start time: 22:35:57 on Apr 12,2022
+ModelSim-Altera Info: # Start time: 12:41:59 on Apr 13,2022
 ModelSim-Altera Info: # Loading work.hw2_tb
 ModelSim-Altera Info: # Loading work.hw2
 ModelSim-Altera Info: # Loading work.hard_block
@@ -89,9 +89,9 @@ ModelSim-Altera Info: #
 ModelSim-Altera Info: # add wave *
 ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 ModelSim-Altera Info: #           File in use by: 91kev  Hostname: SONIC-THE-HEDGE  ProcessID: 23028
-ModelSim-Altera Info: #           Attempting to use alternate WLF file "./wlftvtferd".
+ModelSim-Altera Info: #           Attempting to use alternate WLF file "./wlft4zr1n1".
 ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-ModelSim-Altera Info: #           Using alternate file: ./wlftvtferd
+ModelSim-Altera Info: #           Using alternate file: ./wlft4zr1n1
 ModelSim-Altera Info: # view structure
 ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
 ModelSim-Altera Info: # view signals
@@ -101,31 +101,31 @@ ModelSim-Altera Info: # time=  0 memory_00=0xxx memory_01=0xxx memory_02=0xxx
 ModelSim-Altera Info: # time=321238 write_date=0x06 
 ModelSim-Altera Info: # time=1642438 write_date=0x02 
 ModelSim-Altera Info: # time=1963618 write_date=0x00 
-ModelSim-Altera Info: # time=2284798 write_date=0x78 
+ModelSim-Altera Info: # time=2284799 write_date=0x78 
 ModelSim-Altera Info: # time=7284818 memory_00=0x78 memory_01=0xxx memory_02=0xxx
 ModelSim-Altera Info: # time=8605998 write_date=0x06 
 ModelSim-Altera Info: # time=9927198 write_date=0x02 
 ModelSim-Altera Info: # time=10248378 write_date=0x01 
-ModelSim-Altera Info: # time=10569558 write_date=0x9a 
+ModelSim-Altera Info: # time=10569559 write_date=0x9a 
 ModelSim-Altera Info: # time=15569578 memory_00=0x78 memory_01=0x9a memory_02=0xxx
 ModelSim-Altera Info: # time=16890758 write_date=0x06 
 ModelSim-Altera Info: # time=18211958 write_date=0x02 
 ModelSim-Altera Info: # time=18533138 write_date=0x02 
-ModelSim-Altera Info: # time=18854318 write_date=0xbc 
+ModelSim-Altera Info: # time=18854319 write_date=0xbc 
 ModelSim-Altera Info: # time=23854338 memory_00=0x78 memory_01=0x9a memory_02=0xbc
-ModelSim-Altera Info: # time=26175519 write_date=0x03 
-ModelSim-Altera Info: # time=26496699 write_date=0x00 
-ModelSim-Altera Info: # time=26797877 read_date=0x00 
-ModelSim-Altera Info: # time=28119079 write_date=0x03 
-ModelSim-Altera Info: # time=28440259 write_date=0x01 
-ModelSim-Altera Info: # time=28741437 read_date=0x78 
-ModelSim-Altera Info: # time=30062639 write_date=0x03 
-ModelSim-Altera Info: # time=30383819 write_date=0x02 
-ModelSim-Altera Info: # time=30684997 read_date=0x9a 
+ModelSim-Altera Info: # time=26175518 write_date=0x03 
+ModelSim-Altera Info: # time=26496698 write_date=0x00 
+ModelSim-Altera Info: # time=26797917 read_date=0x78 
+ModelSim-Altera Info: # time=28119118 write_date=0x03 
+ModelSim-Altera Info: # time=28440298 write_date=0x01 
+ModelSim-Altera Info: # time=28741517 read_date=0x9a 
+ModelSim-Altera Info: # time=30062718 write_date=0x03 
+ModelSim-Altera Info: # time=30383898 write_date=0x02 
+ModelSim-Altera Info: # time=30685117 read_date=0xbc 
 ModelSim-Altera Info: # ** Note: $finish    : D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v(111)
-ModelSim-Altera Info: #    Time: 31684997195 ps  Iteration: 0  Instance: /hw2_tb
+ModelSim-Altera Info: #    Time: 31685117447 ps  Iteration: 0  Instance: /hw2_tb
 ModelSim-Altera Info: # 1
 ModelSim-Altera Info: # Break in Module hw2_tb at D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v line 111
-ModelSim-Altera Info: # End time: 22:43:23 on Apr 12,2022, Elapsed time: 0:07:26
+ModelSim-Altera Info: # End time: 12:47:24 on Apr 13,2022, Elapsed time: 0:05:25
 ModelSim-Altera Info: # Errors: 0, Warnings: 2
 Info: NativeLink simulation flow was successful

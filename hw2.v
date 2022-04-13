@@ -17,11 +17,11 @@ module hw2(
 	
 	//State
 	output reg write_complete,
-	output read_complete,
+	output reg read_complete,
 	
 	//Data
 	input  [7:0] write_value,		//write value ---process---> DO
-	output reg [7:0] read_value,	//read value  <---process--- SI
+	output [7:0] read_value,		//read value  <---process--- SI
 											//only exsists while reading
 	
 	//Signals
@@ -121,12 +121,21 @@ module hw2(
 	end
 	
 	//Output Latch
-	
-	wire [7:0] output_buffer;
+	wire internal_read_complete;
+	//wire [7:0] output_buffer;
 	always@(posedge clk_50M,negedge reset_n)begin
-		if(!reset_n) read_value <= 8'd0;
-		else if(read_complete) read_value <= output_buffer;
-		else read_value <= read_value;
+		if(!reset_n) begin
+			//read_value <= 8'd0;
+			read_complete <= 1'd1;
+		end
+		else if(state != reading) begin
+			//read_value <= output_buffer;
+			read_complete <= 1'b1;
+		end
+		else begin
+			//read_value <= read_value;
+			read_complete <= 1'b0;
+		end
 	end
 	
 	//Extrnal Modules
@@ -190,8 +199,8 @@ module hw2(
 		
 		//Retrive data
 		.spi_di(spi_di),
-		.read_data(output_buffer),
-		.read_complete(read_complete),
+		.read_data_o(read_value),
+		.read_complete(internal_read_complete),
 		
 		
 		.total_done(read_done)

@@ -1,5 +1,5 @@
 Flow report for hw2
-Tue Apr 12 22:35:50 2022
+Wed Apr 13 12:41:50 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 12 22:35:50 2022       ;
+; Flow Status                        ; Successful - Wed Apr 13 12:41:50 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; hw2                                         ;
 ; Top-level Entity Name              ; hw2                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 195 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 187 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 122 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 122                                         ;
+; Total logic elements               ; 198 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 189 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 123 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 123                                         ;
 ; Total pins                         ; 26 / 529 ( 5 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/12/2022 22:35:16 ;
+; Start date & time ; 04/13/2022 12:41:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; hw2                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 185122851927703.164977411619708        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 185122851927703.164982487120060        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; hw2_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; hw2_tb                                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -103,12 +103,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4840 MB             ; 00:00:23                           ;
-; Fitter               ; 00:00:15     ; 1.0                     ; 6696 MB             ; 00:00:28                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4681 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4983 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4840 MB             ; 00:00:24                           ;
+; Fitter               ; 00:00:19     ; 1.0                     ; 6692 MB             ; 00:00:36                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4681 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4979 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4652 MB             ; 00:00:01                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:57                           ;
+; Total                ; 00:00:35     ; --                      ; --                  ; 00:01:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

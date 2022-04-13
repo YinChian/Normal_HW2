@@ -1,5 +1,5 @@
 Analysis & Synthesis report for hw2
-Tue Apr 12 22:35:26 2022
+Wed Apr 13 12:41:21 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -19,14 +19,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  11. State Machine - |hw2|writer:write_module|state
  12. Registers Removed During Synthesis
  13. General Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Parameter Settings for User Entity Instance: Top-level Entity: |hw2
- 16. Parameter Settings for User Entity Instance: writer:write_module
- 17. Parameter Settings for User Entity Instance: send_cmd:command_send_module
- 18. Parameter Settings for User Entity Instance: reader:read_module
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Parameter Settings for User Entity Instance: Top-level Entity: |hw2
+ 17. Parameter Settings for User Entity Instance: writer:write_module
+ 18. Parameter Settings for User Entity Instance: send_cmd:command_send_module
+ 19. Parameter Settings for User Entity Instance: reader:read_module
+ 20. Port Connectivity Checks: "reader:read_module"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -52,15 +54,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 12 22:35:26 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 13 12:41:21 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; hw2                                         ;
 ; Top-level Entity Name              ; hw2                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 195                                         ;
-;     Total combinational functions  ; 187                                         ;
-;     Dedicated logic registers      ; 122                                         ;
-; Total registers                    ; 122                                         ;
+; Total logic elements               ; 198                                         ;
+;     Total combinational functions  ; 189                                         ;
+;     Dedicated logic registers      ; 123                                         ;
+; Total registers                    ; 123                                         ;
 ; Total pins                         ; 26                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -189,20 +191,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 195           ;
+; Estimated Total logic elements              ; 198           ;
 ;                                             ;               ;
-; Total combinational functions               ; 187           ;
+; Total combinational functions               ; 189           ;
 ; Logic element usage by number of LUT inputs ;               ;
 ;     -- 4 input functions                    ; 68            ;
-;     -- 3 input functions                    ; 29            ;
-;     -- <=2 input functions                  ; 90            ;
+;     -- 3 input functions                    ; 32            ;
+;     -- <=2 input functions                  ; 89            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 157           ;
+;     -- normal mode                          ; 159           ;
 ;     -- arithmetic mode                      ; 30            ;
 ;                                             ;               ;
-; Total registers                             ; 122           ;
-;     -- Dedicated logic registers            ; 122           ;
+; Total registers                             ; 123           ;
+;     -- Dedicated logic registers            ; 123           ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
 ; I/O pins                                    ; 26            ;
@@ -210,8 +212,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; clk_50M~input ;
-; Maximum fan-out                             ; 122           ;
-; Total fan-out                               ; 1039          ;
+; Maximum fan-out                             ; 123           ;
+; Total fan-out                               ; 1049          ;
 ; Average fan-out                             ; 2.88          ;
 +---------------------------------------------+---------------+
 
@@ -221,8 +223,8 @@ refer to the applicable agreement for further details.
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name ; Library Name ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
-; |hw2                              ; 187 (23)            ; 122 (13)                  ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |hw2                              ; hw2         ; work         ;
-;    |reader:read_module|           ; 72 (72)             ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw2|reader:read_module           ; reader      ; work         ;
+; |hw2                              ; 189 (23)            ; 123 (6)                   ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |hw2                              ; hw2         ; work         ;
+;    |reader:read_module|           ; 74 (74)             ; 56 (56)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw2|reader:read_module           ; reader      ; work         ;
 ;    |send_cmd:command_send_module| ; 33 (33)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw2|send_cmd:command_send_module ; send_cmd    ; work         ;
 ;    |writer:write_module|          ; 59 (59)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw2|writer:write_module          ; writer      ; work         ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
@@ -362,14 +364,24 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 122   ;
+; Total registers                              ; 123   ;
 ; Number of registers using Synchronous Clear  ; 41    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 122   ;
+; Number of registers using Asynchronous Clear ; 123   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 57    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; read_complete~reg0                     ; 1       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -491,27 +503,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reader:read_module"                                                                          ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; read_complete ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 26                          ;
-; cycloneiii_ff         ; 122                         ;
-;     CLR               ; 24                          ;
+; cycloneiii_ff         ; 123                         ;
+;     CLR               ; 25                          ;
 ;     CLR SCLR          ; 41                          ;
 ;     ENA CLR           ; 57                          ;
-; cycloneiii_lcell_comb ; 187                         ;
+; cycloneiii_lcell_comb ; 190                         ;
 ;     arith             ; 30                          ;
 ;         2 data inputs ; 30                          ;
-;     normal            ; 157                         ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 57                          ;
-;         3 data inputs ; 29                          ;
+;     normal            ; 160                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 56                          ;
+;         3 data inputs ; 32                          ;
 ;         4 data inputs ; 68                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.24                        ;
+; Average LUT depth     ; 2.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -530,7 +551,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Apr 12 22:35:16 2022
+    Info: Processing started: Wed Apr 13 12:41:11 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hw2 -c hw2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -540,7 +561,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file m25aa01
     Info (12023): Found entity 1: M25AA010A File: D:/Digital_Logic_Design/Normal/Homework 2/M25AA010A.v Line: 81
 Info (12021): Found 1 design units, including 1 entities, in source file hw2_tb.v
     Info (12023): Found entity 1: hw2_tb File: D:/Digital_Logic_Design/Normal/Homework 2/hw2_tb.v Line: 3
-Warning (10275): Verilog HDL Module Instantiation warning at hw2.v(173): ignored dangling comma in List of Port Connections File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 173
+Warning (10275): Verilog HDL Module Instantiation warning at hw2.v(182): ignored dangling comma in List of Port Connections File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 182
 Info (12021): Found 1 design units, including 1 entities, in source file hw2.v
     Info (12023): Found entity 1: hw2 File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file write.v
@@ -551,24 +572,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file read.v
     Info (12023): Found entity 1: reader File: D:/Digital_Logic_Design/Normal/Homework 2/read.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at edge_detect.v(18): created implicit net for "fail_pos_edge" File: D:/Digital_Logic_Design/Normal/Homework 2/edge_detect.v Line: 18
 Info (12127): Elaborating entity "hw2" for the top level hierarchy
-Info (12128): Elaborating entity "writer" for hierarchy "writer:write_module" File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 156
+Info (12128): Elaborating entity "writer" for hierarchy "writer:write_module" File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 165
 Info (10264): Verilog HDL Case Statement information at write.v(101): all case item expressions in this case statement are onehot File: D:/Digital_Logic_Design/Normal/Homework 2/write.v Line: 101
-Info (12128): Elaborating entity "send_cmd" for hierarchy "send_cmd:command_send_module" File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 173
-Info (12128): Elaborating entity "reader" for hierarchy "reader:read_module" File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 199
+Info (12128): Elaborating entity "send_cmd" for hierarchy "send_cmd:command_send_module" File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 182
+Info (12128): Elaborating entity "reader" for hierarchy "reader:read_module" File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 208
 Info (10264): Verilog HDL Case Statement information at read.v(104): all case item expressions in this case statement are onehot File: D:/Digital_Logic_Design/Normal/Homework 2/read.v Line: 104
-Info (10264): Verilog HDL Case Statement information at read.v(136): all case item expressions in this case statement are onehot File: D:/Digital_Logic_Design/Normal/Homework 2/read.v Line: 136
+Info (10264): Verilog HDL Case Statement information at read.v(137): all case item expressions in this case statement are onehot File: D:/Digital_Logic_Design/Normal/Homework 2/read.v Line: 137
+Info (13000): Registers with preset signals will power-up high File: D:/Digital_Logic_Design/Normal/Homework 2/hw2.v Line: 20
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 15 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 221 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 224 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 195 logic cells
+    Info (21061): Implemented 198 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4840 megabytes
-    Info: Processing ended: Tue Apr 12 22:35:26 2022
+    Info: Processing ended: Wed Apr 13 12:41:21 2022
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
 
 

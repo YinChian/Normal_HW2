@@ -12,7 +12,7 @@ module reader(
 	output reg spi_do,
 	
 	input spi_di,
-	output reg [7:0] read_data,
+	output reg [7:0] read_data_o,
 	output read_complete,
 	
 	output total_done
@@ -31,7 +31,7 @@ module reader(
 	always@(posedge clk, negedge reset_n)begin
 		if(!reset_n) sck <= 1'b0;
 		else begin
-			if(counter > `sck_counter_half) sck <= 1'b1;
+			if(counter > `sck_counter_half && (state != cmd_complete && state != addr_complete && state != done)) sck <= 1'b1;
 			else sck <= 1'b0;
 		end
 	end
@@ -130,6 +130,7 @@ module reader(
 	end
 	
 	//Execute -- Send + Read Data
+	reg [7:0] read_data;
 	always@(posedge clk,negedge reset_n)begin
 		if(!reset_n) read_data <= 8'd0;
 		else begin
@@ -148,6 +149,12 @@ module reader(
 				
 			endcase
 		end
+	end
+	
+	always@(posedge clk, negedge reset_n)begin
+		if(!reset_n) read_data_o <= 8'b0;
+		else if(state == done) read_data_o <= read_data;
+		else read_data_o <= read_data_o;
 	end
 	
 	assign write_complete = (state == cmd_complete || state == addr_complete || state == done) ? 1'b1 : 1'b0;
